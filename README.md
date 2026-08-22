@@ -634,11 +634,11 @@ It should not be deployed in production without appropriate security controls, I
 
 ## Author
 
-**[YOUR NAME]**
+**Javier Ramírez Neira**
 
 Software Engineer / Data Engineer
 
-[LinkedIn](YOUR_LINKEDIN_URL)
+[LinkedIn]([YOUR_LINKEDIN_URL](https://www.linkedin.com/in/javier-ramirez-neira/))
 
 ---
 
