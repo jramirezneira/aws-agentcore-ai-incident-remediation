@@ -1,7 +1,5 @@
 # aws-agentcore-ai-incident-remediation
 
-# AI-Driven Automated Incident Remediation
-
 > An AI-powered incident remediation system built with Amazon Bedrock AgentCore, AWS services, and controlled deterministic execution.
 
 ## Overview
