@@ -1,0 +1,43 @@
+{
+  "severity": "HIGH",
+  "global_summary": "Glue Job TrafficDator_Madrid falla por desajuste de esquema: columna 'timestamp' no registrada en Data Catalog",
+  "incident": [
+    {
+      "technical_solutions": [
+        "aws stepfunctions start-execution --region us-west-2 --state-machine-arn arn:aws:states:us-west-2:156581257326:stateMachine:workflow-remedicion-crawler-glue --input '{\"database\": \"incident-sre-managemet\", \"table\": \"resultado_trafficdator_madrid_output\"}'",
+        "aws glue get-table --region us-west-2 --database-name incident-sre-managemet --name resultado_trafficdator_madrid_output  # Verificar esquema actual registrado en el Data Catalog",
+        "aws glue start-crawler --region us-west-2 --name [CRAWLER_NAME]  # Alternativa manual: relanzar el crawler asociado a la tabla para re-inferir el esquema con la columna 'timestamp'"
+      ],
+      "execution_mode": "AUTOMATIC",
+      "evidence": [
+        "[Incidente 1] GlueExceptionAnalysisListener — Last Executed Line: 45 en TrafficDator_Madrid-automatic-incident-management.py",
+        "[Incidente 2] AnalysisException (Spark Error Class: Unknown) — [INSERT_COLUMN_ARITY_MISMATCH.TOO_MANY_DATA_COLUMNS] Cannot write to spark_catalog.incident-sre-managemet.resultado_trafficdator_madrid_output: too many data columns",
+        "[Incidente 3] pyspark.errors.exceptions.captured.AnalysisException — [INSERT_COLUMN_ARITY_MISMATCH.TOO_MANY_DATA_COLUMNS] Table columns (18): id, date, longitude, latitude, traffic_intensity, day_type, wind, temperature, precipitation, original_point, closest_point, oneway, lanes, name, highway, maxspeed, length, dateyyyymmdd. Data columns (19): misma lista + 'timestamp'. Columna extra no registrada: 'timestamp'.",
+        "Los 3 incidentes comparten caller_name, script y línea de fallo (línea 45 — .insertInto), confirmando causa raíz única con propagación de error en la misma ejecución."
+      ],
+      "confidence": "HIGH",
+      "fingerprint": [
+        "5983a888b7df848c211fb82fb7483f6e13ca0aa232a7afbba458fb371661e766",
+        "4fecab10ba7c3d92de8f4275f00fa95fded02ea7a068620ffd4edc9cde049180",
+        "77c15d0d9ce670bf3d50904b7f61eb2c46cbb689b35e56e5b1054b72631eff63"
+      ],
+      "execution_plan": [
+        {
+          "step": "Ejecutar workflow de recuperación Glue para actualizar Data Catalog y reejecutar el Glue Job",
+          "operation": "start_execution",
+          "parameters": {
+            "stateMachineArn": "arn:aws:states:us-west-2:156581257326:stateMachine:workflow-remedicion-crawler-glue",
+            "database": "incident-sre-managemet",
+            "table": "resultado_trafficdator_madrid_output"
+          },
+          "service": "stepfunctions"
+        }
+      ],
+      "affected_components": [
+        "Glue Job: TrafficDator_Madrid-automatic-incident-management",
+        "Glue Data Catalog — database: incident-sre-managemet, table: resultado_trafficdator_madrid_output"
+      ],
+      "root_cause": "El Glue Job produce 19 columnas (incluye 'timestamp') pero la tabla 'resultado_trafficdator_madrid_output' en el Data Catalog solo registra 18, causando INSERT_COLUMN_ARITY_MISMATCH."
+    }
+  ]
+}

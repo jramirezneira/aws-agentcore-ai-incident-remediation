@@ -1,0 +1,54 @@
+
+
+            incident: 1
+            fingerprint: 5983a888b7df848c211fb82fb7483f6e13ca0aa232a7afbba458fb371661e766
+            layer: DATA
+            caller_type: glue job
+            caller_name: TrafficDator_Madrid-automatic-incident-management    
+            excecution_context: {'arguments': ''}    
+            count: 1
+            sample:
+            ERROR	2026-08-15T20:34:05,696	47737	com.amazonaws.services.glueexceptionanalysis.GlueExceptionAnalysisListener	[main]	9	[Glue Exception Analysis] Last Executed Line number from script TrafficDator_Madrid-automatic-incident-management.py: 45
+            
+
+            incident: 2
+            fingerprint: 4fecab10ba7c3d92de8f4275f00fa95fded02ea7a068620ffd4edc9cde049180
+            layer: DATA
+            caller_type: glue job
+            caller_name: TrafficDator_Madrid-automatic-incident-management    
+            excecution_context: {'arguments': ''}    
+            count: 1
+            sample:
+            Source:
+/tmp/glue-job-557611404444438288/TrafficDator_Madrid-automatic-incident-management.py, line 45
+.insertInto("`incident-sre-managemet`.resultado_trafficdator_madrid_output")
+
+Exception:
+AnalysisException
+
+Spark Error Class:
+Unknown
+
+Message:
+[INSERT_COLUMN_ARITY_MISMATCH.TOO_MANY_DATA_COLUMNS] Cannot write to `spark_catalog`.`incident-sre-managemet`.`resultado_trafficdator_madrid_output`, the reason is too many data columns:
+
+            
+
+            incident: 3
+            fingerprint: 77c15d0d9ce670bf3d50904b7f61eb2c46cbb689b35e56e5b1054b72631eff63
+            layer: DATA
+            caller_type: glue job
+            caller_name: TrafficDator_Madrid-automatic-incident-management    
+            excecution_context: {'arguments': ''}    
+            count: 1
+            sample:
+            Source:
+File "/tmp/glue-job-557611404444438288/TrafficDator_Madrid-automatic-incident-management.py", line 45, in <module>
+.insertInto("`incident-sre-managemet`.resultado_trafficdator_madrid_output")
+
+Exception:
+pyspark.errors.exceptions.captured.AnalysisException
+
+Message:
+[INSERT_COLUMN_ARITY_MISMATCH.TOO_MANY_DATA_COLUMNS] Cannot write to `spark_catalog`.`incident-sre-managemet`.`resultado_trafficdator_madrid_output`, the reason is too many data columns: Table columns: `id`, `date`, `longitude`, `latitude`, `traffic_intensity`, `day_type`, `wind`, `temperature`, `precipitation`, `original_point`, `closest_point`, `oneway`, `lanes`, `name`, `highway`, `maxspeed`, `length`, `dateyyyymmdd`. Data columns: `id`, `date`, `longitude`, `latitude`, `traffic_intensity`, `day_type`, `wind`, `temperature`, `precipitation`, `original_point`, `closest_point`, `oneway`, `lanes`, `name`, `highway`, `maxspeed`, `length`, `timestamp`, `dateyyyymmdd`.
+            
