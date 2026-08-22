@@ -8,7 +8,7 @@
 
 What if an AI agent could do more than identify why a production incident occurred?
 
-What if it could also determine whether the incident can be safely remediated, execute the appropriate remediation, and verify that the service has recovered?
+What if I could also determine if the incident can be safely resolved, implement the appropriate solution, and verify that the process was completed successfully?
 
 This project explores that possibility.
 
