@@ -754,7 +754,7 @@ The exact structure may differ depending on how the MVP is packaged.
 ## Architecture Diagram
 
 ![AI-Driven Incident Remediation
-Architecture]([architecture/architecture.png](https://github.com/jramirezneira/aws-agentcore-ai-incident-remediation/blob/main/architecture/aws-technical-architecture.png))
+Architecture]([architecture/aws-technical-architecture.png])
 
 ------------------------------------------------------------------------
 
