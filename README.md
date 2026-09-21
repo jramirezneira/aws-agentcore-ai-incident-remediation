@@ -775,11 +775,11 @@ infrastructure.
 
 ### Architecture and project overview
 
-[YouTube --- Architecture and conceptual overview](YOUR_VIDEO_1_URL)
+[YouTube --- Architecture and conceptual overview](https://youtu.be/LPBV9P_NZe0?si=xzFRCZnXiXzP_-yj)
 
 ### End-to-end demo
 
-[YouTube --- AWS Glue incident remediation demo](YOUR_VIDEO_2_URL)
+[YouTube --- AWS Glue incident remediation demo](https://youtu.be/IMOy127x_hc?si=dGHs7mokHCGuDLA5)
 
 The demo uses a controlled AWS Glue failure to simulate a production
 incident and shows the flow from incident detection through AI analysis,
