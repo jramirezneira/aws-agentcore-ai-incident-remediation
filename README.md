@@ -753,8 +753,8 @@ The exact structure may differ depending on how the MVP is packaged.
 
 ## Architecture Diagram
 
-![AI-Driven Incident Remediation
-Architecture]([architecture/aws-technical-architecture.png])
+![AI-Driven Incident Remediation Architecture](architecture/aws-technical-architecture.png)
+
 
 ------------------------------------------------------------------------
 
