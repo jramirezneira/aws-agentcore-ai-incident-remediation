@@ -774,15 +774,13 @@ infrastructure.
 ## Demo
 
 ### Architecture and project overview
-https://youtu.be/LPBV9P_NZe0
 
 [![Architecture and conceptual overview](https://youtube.com)](https://youtu.be/LPBV9P_NZe0)
-
-
 
 ### End-to-end demo
 
 [![AWS Glue incident remediation demo](https://youtube.com)](https://youtu.be/IMOy127x_hc)
+
 
 
 
