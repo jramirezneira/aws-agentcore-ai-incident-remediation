@@ -45,24 +45,29 @@ Slack / Jira ◄── Remediation Router ◄── Bedrock AgentCore ◄── 
 
 ## 🚀 Live Demo & Deep Dive
 
-### 📺 1. Conceptual Trailer (5 min)
-*Un resumen rápido del problema operativo nocturno, el dolor de negocio y los fundamentos de la solución serverless.*
+## 🚀 Live Demo & Deep Dive
+
+Explore the project's design and implementation across different levels of technical depth. Click on the preview images below to watch the videos:
+
+### 📺 1. Conceptual Trailer (2 min)
+*A quick summary of the midnight operational pain, the business impact of downtime, and the core serverless architecture principles.*
 
 [![Conceptual Trailer](https://githubusercontent.com)](https://www.linkedin.com/feed/update/urn:li:activity:7510595486907691010/)
 
 ---
 
 ### 🧠 2. Deep Dive: Architecture & Components (7:42 min)
-*Análisis detallado de la infraestructura orientada a eventos. Explicación del Incident Filter, el flujo del AgentCore Gateway bajo protocolo MCP y la capa de ejecución determinista.*
+*Detailed analysis of the event-driven infrastructure. Explanation of the Incident Filter logic, the AgentCore Gateway integration using the MCP protocol, and the deterministic execution layer.*
 
 [![Architecture Deep Dive](https://youtube.com)](https://youtu.be/LPBV9P_NZe0)
 
 ---
 
 ### 💻 3. Full Technical Demo in Real-Time (11 min)
-*Demostración técnica de extremo a extremo. Simulación de un fallo controlado por discrepancia de metadatos en un Job de AWS Glue, auto-sanación mediante Step Functions y validación determinista con notificaciones en Slack y Jira.*
+*End-to-end technical demonstration. Watch a simulated production failure via a metadata arity mismatch in an AWS Glue Job trigger a self-healing workflow through Step Functions, ending with deterministic validation and live alerts in Slack and Jira.*
 
 [![Real-Time Technical Demo](https://youtube.com)](https://youtu.be/IMOy127x_hc)
+
 
 ---
 
