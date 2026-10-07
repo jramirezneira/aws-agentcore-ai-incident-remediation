@@ -60,7 +60,7 @@ This project is transitioning from an experimental MVP into an **AIOps Startup/S
 
 If you are excited about the intersection of Generative AI, infrastructure reliability, and open-source software, let's build the future of autonomous operations together! 
 
-👉 **Open an Issue, submit a PR, or connect with me directly on [LinkedIn](%5BYOUR_LINKEDIN_URL%5D(https://www.linkedin.com/in/javier-ramirez-neira/)).**
+👉 **Open an Issue, submit a PR, or connect with me directly on [LinkedIn](https://www.linkedin.com/in/javier-ramirez-neira/).**
 
 ---
 
