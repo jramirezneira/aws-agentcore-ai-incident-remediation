@@ -46,6 +46,7 @@ Slack / Jira ◄── Remediation Router ◄── Bedrock AgentCore ◄── 
 
 ## 🚀 Live Demo & Deep Dive
 
+
 Explore the project's design and implementation across different levels of technical depth. Click on the preview images below to watch the videos:
 
 ### 📺 1. Conceptual Trailer (2 min)
@@ -66,7 +67,6 @@ Explore the project's design and implementation across different levels of techn
 *End-to-end technical demonstration. Watch a simulated production failure via a metadata arity mismatch in an AWS Glue Job trigger a self-healing workflow through Step Functions, ending with deterministic validation and live alerts in Slack and Jira.*
 
 [![Real-Time Technical Demo](thumbnail/miniatura video2.png)](https://youtu.be/IMOy127x_hc)
-
 
 
 ---
