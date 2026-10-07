@@ -45,8 +45,8 @@ Slack / Jira ◄── Remediation Router ◄── Bedrock AgentCore ◄── 
 
 ## 🚀 Live Demo & Deep Dive
 
-* **2-Min Architecture Summary:** [LINK_TO_YOUR_LINKEDIN_VIDEO] *(High-level overview)*
-* **End-to-End Technical Demo (11 min):** [LINK_TO_YOUTUBE_DEMO] *(Real simulated AWS Glue failure & self-healing workflow)*
+* **2-Min Architecture Summary:** [https://youtu.be/LPBV9P_NZe0] *(High-level overview)*
+* **End-to-End Technical Demo (11 min):** [https://youtu.be/IMOy127x_hc] *(Real simulated AWS Glue failure & self-healing workflow)*
 
 ---
 
